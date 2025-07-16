@@ -1,0 +1,27 @@
+{
+  "name": "telegram-bot-netlify",
+  "version": "1.0.0",
+  "description": "Telegram bot backend migrated from AWS Lambda to Netlify Functions",
+  "main": "netlify/functions/telegram-webhook.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "netlify",
+    "serverless",
+    "functions"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
+

@@ -1,0 +1,19 @@
+[build]
+  functions = "netlify/functions"
+  
+[functions]
+  # Set Node.js version
+  node_bundler = "esbuild"
+  
+[functions."telegram-webhook"]
+  # Increase timeout for webhook processing
+  timeout = 30
+
+[[redirects]]
+  from = "/webhook"
+  to = "/.netlify/functions/telegram-webhook"
+  status = 200
+
+# Environment variables (set these in Netlify dashboard)
+# BOT_TOKEN = "your_telegram_bot_token_here"
+
